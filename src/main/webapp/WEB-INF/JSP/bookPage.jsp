@@ -5,6 +5,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="<c:url value="/resources/js/bookPage.js" />" type="text/javascript"></script>
+<link href="<c:url value="/resources/css/bookPage.css" />" type="text/css" rel="stylesheet">
 
 <!DOCTYPE html>
 <html>
@@ -13,7 +14,7 @@
     </head>
     <body>
 
-        <h2>${bookSays}</h2>
+        <h2 class="violetColorText">${bookSays}</h2>
         <button id="button1" label="testButton">Click me</button>
     </body>
 </html>
