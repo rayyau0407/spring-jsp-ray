@@ -3,18 +3,17 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="org.springframework.web.client.RestTemplate" %>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="<c:url value="/resources/js/bookPage.js" />" type="text/javascript"></script>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Spring Boot Web with JSP - Simple Solution </title>
+        <title>Book-Page</title>
     </head>
     <body>
 
-        <h3>${message}</h3>
         <h2>${bookSays}</h2>
-        <c:set var="author" value="${author}" />
-        <h1>my author is: ${author} </h1>
-          <c:set var="restTem" value="${restTemplate}"/>
-        <h3> restTemplate: ${restTem}</h3>
+        <button id="button1" label="testButton">Click me</button>
     </body>
 </html>
