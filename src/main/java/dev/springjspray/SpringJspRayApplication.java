@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@EnableJpaRepositories(basePackages="your.package", entityManagerFactoryRef="emf")
+@EnableJpaRepositories(basePackages="dev.springjspray.Customer")
 public class SpringJspRayApplication {
 
 	@SuppressWarnings("unchecked")
