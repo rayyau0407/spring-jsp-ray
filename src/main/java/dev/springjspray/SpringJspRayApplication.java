@@ -1,12 +1,16 @@
 package dev.springjspray;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 @SpringBootApplication
+@EnableAutoConfiguration
+@EnableJpaRepositories(basePackages="your.package", entityManagerFactoryRef="emf")
 public class SpringJspRayApplication {
 
 	@SuppressWarnings("unchecked")
